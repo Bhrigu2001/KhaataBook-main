@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="nav w-full flex justify-between items-center pt-5 p-10">
+      <h1 class="text-2xl text-blue-500 font-[600]">KhaataBook</h1>
+      <% var nav = typeof nav === 'undefined'? true:nav %> 
+      <%if(nav){ %>
+      <div class="flex gap-6 items-center">
+        <a href="/profile">Home</a>
+        <a href="/hisaab/create">Create new Hisaab</a>
+        <a href="/logout" class="text-red-500">Logout</a>
+      </div>
+      <%}%>
+    </div>
+
